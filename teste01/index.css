@@ -1,0 +1,81 @@
+@charset "utf-8";
+:root {
+  --main-color: #00ffcc;
+  --bg-color: #1a1a1a;
+  --cell-size: 120px;
+  --border-radius: 12px;
+  --win-color: #ff4081;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, var(--cell-size));
+  grid-template-rows: repeat(3, var(--cell-size));
+  gap: 10px;
+  background-color: #333;
+  padding: 10px;
+  border-radius: var(--border-radius);
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+.cell {
+  width: var(--cell-size);
+  height: var(--cell-size);
+  background-color: #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  cursor: pointer;
+  border-radius: var(--border-radius);
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.cell:hover {
+  background-color: #444;
+  transform: scale(1.05);
+}
+
+.cell.x {
+  color: var(--main-color);
+}
+
+.cell.o {
+  color: #ffcc00;
+}
+
+.cell.win {
+  animation: winFlash 1s infinite alternate;
+}
+
+@keyframes winFlash {
+  0% { background-color: var(--win-color); transform: scale(1); }
+  100% { background-color: #222; transform: scale(1.1); }
+}
+
+button.restart {
+  margin-top: 20px;
+  background-color: var(--main-color);
+  color: #000;
+  padding: 10px 20px;
+  border: none;
+  border-radius: var(--border-radius);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button.restart:hover {
+  background-color: #00ddb3;
+}

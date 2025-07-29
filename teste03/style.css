@@ -1,0 +1,66 @@
+@charset "utf-8";
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fefefe;
+    background-color: rgba(10, 10, 10, 0.808);
+    margin: 0px;
+}
+
+header {
+    background-color: rgb(184, 93, 29);
+    padding: 10px 25px;
+    box-shadow: 0 4px 8px;
+}
+
+img {
+    position: absolute;
+    left: 35px;
+    top: 20px;
+    left: 200px;
+    width: 70px;
+}
+
+.menu{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: flex;
+    color: #fff;
+}
+
+.logo01 {
+    left: 195px;
+    top: 12px;
+}
+
+.logo2 {
+    font-size: flex;
+    left: 222px;
+    top: 13px;
+}
+
+.logo3 {
+    font-size: flex;
+    left: 230px;
+    top: 15px;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    gap: 35px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.menu ul li a:hover {
+    color:black
+}

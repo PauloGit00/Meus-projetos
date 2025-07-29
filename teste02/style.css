@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+body{
+    background-color: rgb(163, 162, 162);
+}
+
+h2 {
+    color: white;
+}
+
+ol {
+    color: white;
+}
+
+.vava {
+   background-color: red;
+   color: white;
+}
+
+.cs {
+    background-color: rgb(153, 100, 8);
+    color: white
+}
+
+.mama {
+   background-color: green;
+   color: white;
+}

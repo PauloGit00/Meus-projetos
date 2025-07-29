@@ -1,0 +1,15 @@
+@charset "utf-8";
+
+
+body {
+    background-image: linear-gradient(to right,black, rgb(102, 102, 102), black);
+}
+
+#menu {
+    color: white;
+   
+}
+
+.links {
+   
+}
